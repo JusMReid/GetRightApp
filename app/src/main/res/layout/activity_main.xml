@@ -18,7 +18,7 @@
         />
 
     <FrameLayout
-        android:id="@+id/Mind"
+        android:id="@+id/mind"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
@@ -26,7 +26,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lightbulb1"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -34,30 +36,34 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="MIND"
+            android:textColor="@android:color/white"
             android:textSize="50sp"/>
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/Body"
+        android:id="@+id/body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jogger"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="@android:color/white"
             android:text="BODY"
             android:textSize="50sp"/>
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/Soul"
+        android:id="@+id/soul"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -65,12 +71,15 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/galaxy"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@android:color/darker_gray"
             android:gravity="center"
             android:text="SOUL"
             android:textSize="50sp"/>
