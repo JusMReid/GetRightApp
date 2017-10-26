@@ -16,12 +16,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FrameLayout mindLayout = (FrameLayout) findViewById(R.id.mind);
+        FrameLayout bodyLayout = (FrameLayout) findViewById(R.id.body);
+        FrameLayout soulLayout = (FrameLayout) findViewById(R.id.soul);
 
         mindLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"MIND", Toast.LENGTH_SHORT)
                 .show();
+            }
+        });
+
+        bodyLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"BODY", Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+        soulLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"SOUL", Toast.LENGTH_SHORT)
+                        .show();
             }
         });
     }
